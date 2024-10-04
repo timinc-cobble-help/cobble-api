@@ -11,6 +11,12 @@ const speciesSchema = new mongoose.Schema({
         required: true,
         unique: true,
     },
+    base: {
+        type: String,
+    },
+    file: {
+        type: String,
+    },
     data: {
         type: Object,
         required: true,

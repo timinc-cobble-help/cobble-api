@@ -1,15 +1,15 @@
 const express = require("express");
-const Species = require("../models/species");
+const Spawns = require("../models/spawns");
 
 const router = express.Router();
 
 router.get("/", async (req, res) => {
     try {
-        const species = await Species.find()
+        const spawns = await Spawns.find()
             .select("name summon")
             .exec();
 
-        res.json(species);
+        res.json(spawns);
     } catch (err) {
         res.status(500).json({ message: err.message });
     }
