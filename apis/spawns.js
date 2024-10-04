@@ -6,7 +6,7 @@ const router = express.Router();
 router.get("/", async (req, res) => {
     try {
         const spawns = await Spawns.find()
-            .select("name summon")
+            .select("summon")
             .exec();
 
         res.json(spawns);
