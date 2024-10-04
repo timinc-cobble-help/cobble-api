@@ -1,0 +1,19 @@
+{
+  "name": "cobble-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx node-dev index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "consola": "^3.2.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "gitlab": "github:tmetcalfe89/gitlab-js",
+    "mongoose": "^8.7.0"
+  }
+}
